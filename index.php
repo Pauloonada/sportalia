@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+?>
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +17,13 @@
             <h1 class="texto-head">Clube Sportalia</h1>
 		    <a href="entrar.php" class="perfil">
                 <img src="images/perfil.png" alt="Entrar" width="100px" height="100px">
-                <p>entrar</p>
+                <?php if(!isset($_SESSION['user'])){
+                            echo '<p>entrar</p>';
+                        }
+                        else{
+                            echo '<p style="font-size:20px;">'.$_SESSION['user'].'</p>';
+                        }
+                        ?>
             </a>
     </header>
     <nav>
