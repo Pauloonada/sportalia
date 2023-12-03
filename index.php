@@ -8,14 +8,14 @@
     <header>
 		    <img src="images/logo.png" alt="Logo" class="logo">
             <h1 class="texto-head">Clube Sportalia</h1>
-		    <a href="#" class="perfil">
+		    <a href="entrar.php" class="perfil">
                 <img src="images/perfil.png" alt="Entrar" width="100px" height="100px">
                 <p>entrar</p>
             </a>
     </header>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#eventos">Eventos</a></li>
             <li><a href="#contato">Contato</a></li>
