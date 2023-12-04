@@ -15,7 +15,13 @@
     <header>
 		    <img src="images/logo.png" alt="Logo" class="logo">
             <h1 class="texto-head">Clube Sportalia</h1>
-		    <a href="entrar.php" class="perfil">
+		    <a href="<?php if(!isset($_SESSION['user'])){
+                echo 'entrar.php';
+            }
+            
+            else{
+                echo'perfil.php';
+            }?>" class="perfil">
                 <img src="images/perfil.png" alt="Entrar" width="100px" height="100px">
                 <?php if(!isset($_SESSION['user'])){
                             echo '<p>entrar</p>';

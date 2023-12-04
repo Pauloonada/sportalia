@@ -39,4 +39,4 @@ VALUES
 	('teste', 'teste@teste.com', 'teste');
     
     
-select * from usuarios;
+select * from equipes;

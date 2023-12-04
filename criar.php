@@ -25,7 +25,7 @@
                     $query = "insert into usuarios(nome, email, senha) values('$user', '$email', '$password')";
                     mysqli_query($mysqli, $query);
 
-                    echo '<script> alert(\'Cadastrado com sucesso\'); window.location.href = "index.php"; </script>';
+                    echo '<script> alert(\'Cadastrado com sucesso\'); window.location.href = "entrar.php"; </script>';
                 }
 
                 else{
@@ -67,7 +67,7 @@
         </p>
 
         <p>
-            <button type="submit">Entrar</button>
+            <button type="submit">Cadastrar</button>
         </p>
     </form>
 
