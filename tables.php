@@ -16,6 +16,7 @@
     <?php foreach(getMembros($mysqli) as $membro): ?>
         <div align="center" style="background-color:aliceblue; padding: 5px; border-radius: 30px; margin: 20px">
             <p>id: <?php echo $membro['id'] ?></p>
+            <p>usuario_id: <?php echo $membro['usuario_id'] ?></p>
             <p>nome: <?php echo $membro['nome'] ?></p>
             <p>idade: <?php echo $membro['idade'] ?></p>
             <p>endereço: <?php echo $membro['endereco'] ?></p>

@@ -38,5 +38,8 @@ VALUES
 VALUES
 	('teste', 'teste@teste.com', 'teste');
     
-    
+use sportalia;
+
 select * from equipes;
+select * from usuarios;
+select * from membros;

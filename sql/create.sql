@@ -8,7 +8,9 @@ CREATE TABLE membros (
     nome VARCHAR(50) NOT NULL,
     idade INT,
     endereco VARCHAR(100),
-    telefone VARCHAR(20)
+    telefone VARCHAR(20),
+    usuario_id INT,
+    FOREIGN KEY(usuario_id) REFERENCES usuarios(id)
 );
 
 -- Tabela de Esportes
